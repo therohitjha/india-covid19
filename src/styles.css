@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 .container {
   display: flex;
   justify-content: center;
@@ -13,6 +14,13 @@
   color: white;
   padding: 1rem;
 }
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn {
   width: 150px;
   background-color: blueviolet;
@@ -49,9 +57,10 @@ h6{
   font-size: 22px
 }
 
-h6:first-child{
-margin-top: 20px;
+h6,h3{
+margin: 20px;
 }
+
 
 .footer{
   display: flex;
