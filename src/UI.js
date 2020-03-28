@@ -25,7 +25,7 @@ export default function UI({ data, getDate }) {
               <h6>Total Death</h6>
               <button className="btn danger">{data.deaths}</button>
             </div>
-            <h4>Source : <a href='https://mohfw.gov.in'>Ministry Of Health & Family Welfare</a> </h4>
+            <h4>Source : <a href='https://mohfw.gov.in' target='_blank'>Ministry Of Health & Family Welfare</a> </h4>
           </div>
         ) :
           <img src={loading} alt="loading" style={{width:'320px'}}/>
