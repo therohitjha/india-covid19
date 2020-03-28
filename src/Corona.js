@@ -8,12 +8,19 @@ export default function Corona() {
     const fetchdata = async () => {
       try {
         const getData = await fetch(
-          "https://covid19apiss.herokuapp.com/reportsIndia"
+          "https://api.rootnet.in/covid19-in/stats/latest"
         );
 
         const response = await getData.json();
         const result = await response;
-        setData(result);
+        setData(
+          {
+            total:result.data.summary.total,
+            confirmed:result.data.summary.confirmedCasesIndian,
+            recovered:result.data.summary.discharged,
+            deaths:result.data.summary.deaths
+          }
+        );
       } catch (err) {
         console.log(err);
       }
